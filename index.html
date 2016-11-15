@@ -1,0 +1,142 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AcFun</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!--<link rel="shortcut icon" href="/favicon.ico">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="/dist/css/sm.min.css">
+    <link rel="stylesheet" href="/dist/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page" id="home">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav">
+            <a class="icon icon-menu pull-left"></a>
+            <h1 class="title"><a href='#list' class="logo-header"></a></h1>
+            <a class="icon icon-search pull-right"></a>
+        </header>
+         <!--工具栏-->
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <!--导航-->
+            <nav id="guide">
+                <ul>
+                    <li class="active"><a class="active">首页</a></li>
+                    <li><a href="/list/#channel=60">娱乐</a></li>
+                    <li><a href="/list/#channel=59">游戏</a></li>
+                    <li><a href="/list/#channel=110">文章</a></li>
+                    <li><a href="/list/#channel=1">动画</a></li>
+                    <li><a href="/list/#channel=58">音乐</a></li>
+                    <li><a href="/list/#channel=70">科技</a></li>
+                    <li><a href="/list/#channel=69">体育</a></li>
+                    <li><a href="/list/#channel=68">影视</a></li>
+                    <li><a href="/album/index.htm">合辑</a></li>
+                    <li><a href="http://www.douyu.tv">直播</a></li>
+                    <button class="more"><span>...</span></button>
+                </ul>
+            </nav>
+           <!--幻灯片-->
+                <div class="swiper-container swiper" data-space-between='10'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/imgs/banner1.png" alt="" style='width: 100%'></div>
+                        <div class="swiper-slide"><img src="/imgs/banner2.png" alt="" style='width: 100%'></div>
+                        <div class="swiper-slide"><img src="/imgs/banner3.png" alt="" style='width: 100%'></div>
+                        <div class="swiper-slide"><img src="/imgs/banner4.jpg" alt="" style='width: 100%'></div>
+                        <div class="swiper-slide"><img src="/imgs/banner5.png" alt="" style='width: 100%'></div>
+                    </div>
+                    <div class="swiper-pagination "></div>
+                </div>
+
+            <!--楼层-->
+           <section id="article">
+                   <a href="#">
+                       <h4 style="margin: 0 0;display: inline;padding: 0.5rem;">文章</h4>
+                       <i class="icon icon-right pull-right"></i>
+                   </a>
+               <div class="mainer">
+                   <a href="#" class="item">
+                       <div style="background-image:url('http://imgs.aixifan.com/content/2016_10_13/1479054315.jpg')" class="thumb"></div>
+                       <div class="inner">
+                           <div class="article-title">
+                               <span>【买房后怎么装】60平米建筑面积房间，波兰设计师设计</span>
+                           </div>
+                           <div class="article-desc">
+                               <p>波兰设计团队  PLASTE[R]LINA 华沙公寓项目专门设计，60+平米建筑面积，很难想想2个卫生间，隔墙处理大胆，不过细节上有不少待商榷，UP从找图，到上传用了7个小时，猴子让过了吧，毕竟A站08年老用户到现在基本差不多都买房装修了，看SLLW妹子有感，生活索性弄得更好看。</p>
+                           </div>
+                       </div>
+                   </a>
+                   <a href="#" class="item">
+                       <div class="com-title">
+                           <span>驱邪避灾就靠它！岛国推出僵尸符咒丝袜</span>
+                       </div>
+                       <div class="com-comm">
+                           <p>
+                               <i class="icon icon-message"></i>
+                               <span class="count">147</span>
+                           </p>
+                       </div>
+                   </a>
+                   <a href="#" class="item">
+                       <div class="com-title">
+                           <span>驱邪避灾就靠它！岛国推出僵尸符咒丝袜</span>
+                       </div>
+                       <div class="com-comm">
+                           <p>
+                               <i class="icon icon-message"></i>
+                               <span class="count">147</span>
+                           </p>
+                       </div>
+                   </a>
+                   <a href="#" class="item">
+                       <div class="com-title">
+                           <span>驱邪避灾就靠它！岛国推出僵尸符咒丝袜</span>
+                       </div>
+                       <div class="com-comm">
+                           <p>
+                               <i class="icon icon-message"></i>
+                               <span class="count">147</span>
+                           </p>
+                       </div>
+                   </a>
+               </div>
+           </section>
+            <section id="donghua" >
+                <a href="#">
+                    <h4 style="margin: 0 0;display: inline;padding: 0.5rem;">动画</h4>
+                    <i class="icon icon-right pull-right"></i>
+                </a>
+            </section>
+        </div>
+    </div>
+</div>
+
+    <!-- popup, panel 等放在这里 -->
+    <div class="panel-overlay"></div>
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>这是一个侧栏</p>
+            <p></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="#" class="close-panel">关闭</a></p>
+        </div>
+    </div>
+
+<script type='text/javascript' src='/dist/js/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='/dist/js/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='/dist/js/sm-extend.js' charset='utf-8'></script>
+<script type='text/javascript' src='/js/app.js' charset='utf-8'></script>
+<script>
+    $.init();
+</script>
+</body>
+</html>
