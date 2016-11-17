@@ -1,6 +1,10 @@
+
 html{
   font-size: 20px !important;
   font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif !important;
+  a{
+    color: #606060;
+  }
 }
 .logo-header{
   display: block;
@@ -94,11 +98,14 @@ html{
 #guide ul.active {
   height: 120px;
 }
+.margin-left{
+  padding-left: 4.4rem;
+}
 .swiper{
-  height:232.875px;
+  height:10.547rem;
 }
 .swiper img{
-  height:232.875px;
+  height:10.547rem;
   background-size: cover;
 }
 #article a{
@@ -147,13 +154,10 @@ html{
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.inner{
-  padding-left: 4.5rem;
-}
 .article-desc{
   font-size: 0.65rem;
   margin-top: -5px;
-  height: 1.83rem;
+  height: 1.8rem;
   overflow: hidden;
   color: #aaa;
   line-height: 1.35;;
@@ -162,6 +166,7 @@ html{
   margin:0 0;
 }
 .com-title{
+  white-space: nowrap;
   height: 1.8rem;
   line-height: 2rem;
   word-break: break-all;
@@ -184,4 +189,74 @@ html{
 }
 .ban-title{
   color: #ff851b;
+}
+//以上是没有进行less编译，下面都是用过less编译的 真是坑啊
+.color-orange{
+  color: #ff851b;
+}
+.banner{
+  position: relative;
+  display: block;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding: 2px 0;
+}
+.mainer{
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  .unit{
+    width: 50%;
+    height:6.436rem;
+    float: left;
+    padding: 4px 4px 4px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    .inner{
+      width: 100%;
+      height:100%;
+      -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      position: relative;
+      display: block;
+      background-color: #fff;
+      .p-cover{
+        position: relative;
+        height: 100%;
+        .thumb{
+          position: absolute;
+          width: 100%;
+          height: 83.333%;
+          transition: opacity .3s;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          background-position: 50% 50%;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+      }
+      .p-title{
+        margin-top: -1rem;
+        padding: 5px;
+        white-space: nowrap;
+        div{
+          height: 1.5rem;
+          overflow: hidden;
+          font-size: .4rem;
+          line-height: 1;
+          word-break: break-all;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
 }
